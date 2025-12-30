@@ -7,11 +7,12 @@ using namespace std;
 string str1;
 Stack<int>nums;
 
+//支持多位数和负数
 int solve() {
 	string c;
 	istringstream ss(str1);
 	while(ss>>c) {
-		if (isdigit(c[0])) {
+		if (isdigit(c[0])||(c[0]=='-'&&isdigit(c[1]))) {
 			nums.push(stoi(c));
 		}
 		else if (c == "+" || c == "-" || c == "*" || c == "/") {
@@ -41,8 +42,10 @@ int solve() {
 	}
 	return nums.top();
 }
+
 int main() {
 	getline(cin, str1);
 	int res = solve();
 	if (res != -1) cout << res << endl;
+	return 0;
 }

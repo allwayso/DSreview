@@ -2,8 +2,8 @@
 #include<string>
 using namespace std;
 
-//递增栈实现
-int main_OrderedStack() {
+//顺序栈实现
+int main() {
 	Stack<int> myS;
 	Stack<int>temp;
 	int n;
