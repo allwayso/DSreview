@@ -25,7 +25,7 @@
 2. **定位索引**：在文档最下方的 **“题目索引”** 栏目中找到题目名称及其对应的源代码文件名。
 3. **获取源码**：根据文件名进入 `Src/` 对应章节的文件夹中即可找到该 `.cpp` 实现文件。
 
-### 🚀 编译与运行指引
+## 🚀 编译与运行指引
 
 本项目中的每个 `.cpp` 文件（如 `Infix2Postfix.cpp`, `Evaluate.cpp` 等）均包含独立的 `main` 函数，可作为独立的工具运行。由于文件间共享 `stackModel.h`，请根据以下方式进行编译：
 
@@ -36,19 +36,17 @@
 1. **打开终端**：在 VS 中按 `Ctrl +` 或搜索 "Developer PowerShell"。
 
 2. **编译指定文件**：
-   
-   ```PowerShell
-   # 编译中缀转后缀工具
-   cl /EHsc Infix2Postfix.cpp 
-   ```
+
+```PowerShell
+# 编译中缀转后缀工具
+cl /EHsc Infix2Postfix.cpp 
+```
 
 3. **运行程序**：
 
 ```PowerShell
-   .\converter.exe
+   .\Infix2Postfix.exe
 ```
-
-   *注意：输入表达式时，数字与符号之间请保留空格，例如：`3 + ( 5 * 2 )`。*
 
 #### 方式二：集成开发环境 (IDE)
 
