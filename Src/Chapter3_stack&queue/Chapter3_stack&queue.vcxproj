@@ -133,6 +133,7 @@
     <ClCompile Include="JosephRing.cpp" />
     <ClCompile Include="OrderedStack.cpp" />
     <ClCompile Include="PostfixEvaluation.cpp" />
+    <ClCompile Include="PriorityQueue.h" />
     <ClCompile Include="SlidingWindow.cpp" />
     <ClCompile Include="stackModel.h" />
   </ItemGroup>
