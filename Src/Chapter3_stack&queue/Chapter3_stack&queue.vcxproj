@@ -130,9 +130,14 @@
     <ClCompile Include="BracketMatching.cpp" />
     <ClCompile Include="InfixEvaluation.cpp" />
     <ClCompile Include="InfixToPostfix.cpp" />
+    <ClCompile Include="JosephRing.cpp" />
     <ClCompile Include="OrderedStack.cpp" />
     <ClCompile Include="PostfixEvaluation.cpp" />
+    <ClCompile Include="SlidingWindow.cpp" />
     <ClCompile Include="stackModel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="queueModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

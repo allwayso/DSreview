@@ -33,5 +33,16 @@
     <ClCompile Include="OrderedStack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SlidingWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JosephRing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="queueModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
