@@ -48,6 +48,12 @@ cl /EHsc Infix2Postfix.cpp
    .\Infix2Postfix.exe
 ```
 
+4.**清理编译文件**
+
+```PowerShell
+rm *.obj,*.exe
+```
+
 #### 方式二：集成开发环境 (IDE)
 
 如果你习惯直接点击 VS 的“运行”按钮：
