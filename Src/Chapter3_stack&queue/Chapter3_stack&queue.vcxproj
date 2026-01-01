@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseConversion.cpp" />
     <ClCompile Include="BracketMatching.cpp" />
     <ClCompile Include="InfixEvaluation.cpp" />
     <ClCompile Include="InfixToPostfix.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="PriorityQueue.h" />
     <ClCompile Include="SlidingWindow.cpp" />
     <ClCompile Include="stackModel.h" />
+    <ClCompile Include="YHTriangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="queueModel.h" />

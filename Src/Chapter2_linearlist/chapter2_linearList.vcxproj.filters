@@ -30,5 +30,8 @@
     <ClCompile Include="laskKnode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="mergeList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

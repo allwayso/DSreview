@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="laskKnode.cpp" />
     <ClCompile Include="linkedlistModel.h" />
+    <ClCompile Include="mergeList.cpp" />
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="RemoveDuplicates.cpp" />
     <ClCompile Include="reverseList.cpp" />
