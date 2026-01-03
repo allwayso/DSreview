@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0afebea1-3caf-4704-b97a-1c0cd1c6ab81}</ProjectGuid>
-    <RootNamespace>chapter7tree</RootNamespace>
+    <ProjectGuid>{d30fc6d5-b2ac-4e17-9553-58018aa1a946}</ProjectGuid>
+    <RootNamespace>chapter8graph</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,14 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BinaryLinkedTree.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BLTtest.cpp" />
-    <ClCompile Include="MinHeight.cpp" />
-    <ClCompile Include="singleBranch.cpp" />
-    <ClCompile Include="stackInorder.cpp" />
-    <ClCompile Include="TreeWidth.cpp" />
+    <ClCompile Include="ConnectedComponents.cpp" />
+    <ClCompile Include="HuffmanCode.cpp" />
+    <ClCompile Include="HuffmanTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
