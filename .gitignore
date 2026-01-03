@@ -1,17 +1,25 @@
-## --- Visual Studio 临时文件和构建产物 ---
+## --- Visual Studio 临时文件和构建产物（核心优化：覆盖根目录+所有层级） ---
 
-# 过滤编译生成的二进制文件 (Debug/Release 目录)
+# 过滤编译生成的二进制目录（所有层级，兼容大小写+架构）
 [Dd]ebug/
 [Rr]elease/
 x64/
 x86/
-bin/
-obj/
+**/bin/
+**/obj/
 
-# 过滤 VS 自动生成的本地缓存文件夹 (非常大且包含私有信息)
+# 明确过滤 ALL .exe 可执行文件（无论在根目录还是子目录，彻底不漏掉）
+*.exe
+# 可选：过滤 exe 调试附属文件（部分编译环境生成）
+*.exe.debug
+
+# 明确过滤 ALL .obj 目标文件（单个文件，无论层级，补充目录规则的不足）
+*.obj
+
+# 过滤 VS 自动生成的本地缓存文件夹（核心本地缓存，体积大）
 .vs/
 
-# 过滤特定后缀的临时文件
+# 过滤特定后缀的临时文件/编译附属文件
 *.user
 *.aps
 *.pdb
@@ -25,13 +33,36 @@ obj/
 *.opendb
 *.sdf
 *.ipch
+*.dll
+*.lib
+*.manifest
+*.res
+*.resources
+*.tlb
+*.tli
+*.tlh
+*.bak
+*.suo
+*.cache
+*.vcxproj.user
+*.vcxproj.filters.user
 
-## --- 操作系统临时文件 ---
+## --- 操作系统临时文件（跨平台兼容） ---
+# Mac 系统
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+# Windows 系统
 Thumbs.db
+Desktop.ini
+# Linux 系统
+*~
 
-## --- 允许追踪的文件 (白名单) ---
-# 明确允许以下文件（虽然上面的规则通常不会过滤它们，但为了保险起见）
+## --- 允许追踪的核心项目文件（白名单，保险起见，避免误过滤） ---
 !.sln
 !.vcxproj
 !.vcxproj.filters
+!.vcxproj.user.props
+!.targets
