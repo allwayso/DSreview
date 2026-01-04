@@ -128,8 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConnectedComponents.cpp" />
+    <ClCompile Include="DFS.cpp" />
+    <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="EZcycleJudge.cpp" />
+    <ClCompile Include="further.cpp" />
+    <ClCompile Include="has_path.cpp" />
     <ClCompile Include="HuffmanCode.cpp" />
     <ClCompile Include="HuffmanTree.cpp" />
+    <ClCompile Include="Kruskal.cpp" />
+    <ClCompile Include="Prim.cpp" />
+    <ClCompile Include="RingPastx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

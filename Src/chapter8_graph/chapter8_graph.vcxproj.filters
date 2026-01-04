@@ -24,5 +24,29 @@
     <ClCompile Include="HuffmanCode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Dijkstra.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EZcycleJudge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="has_path.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="further.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RingPastx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Prim.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Kruskal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
