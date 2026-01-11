@@ -12,7 +12,7 @@ int main() {
 		cin >> a[i];
 	}
 	int count = 0;
-	while(l<r){
+	while (l < r) {
 		int mid = l + r >> 1;
 		if (a[mid] < k) l = mid + 1;
 		else r = mid;

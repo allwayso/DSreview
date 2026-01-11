@@ -12,7 +12,7 @@ bool solve() {
 	while (q.size()) {
 		int t = q.front();
 		q.pop();
-		
+
 	}
 	return false;
 }
@@ -29,7 +29,7 @@ bool solve2() {
 	return true;
 }
 int main() {
-	
+
 	cin >> n;
 	for (int i = 0; i < n; i++) {
 		cin >> a[i];

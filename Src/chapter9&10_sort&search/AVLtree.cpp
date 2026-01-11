@@ -5,7 +5,7 @@ using namespace std;
 struct Node {
 	int val;
 	int height;
-	Node* l,* r;
+	Node* l, * r;
 	Node(int x) :val(x), height(1), l(nullptr), r(nullptr) {}
 	Node() :val(0), height(0), l(nullptr), r(nullptr) {}
 };
@@ -13,7 +13,7 @@ struct Node {
 int get_height(Node* p) {
 	return p ? p->height : 0;
 }
-Node* insert(Node* root,int x) {
+Node* insert(Node* root, int x) {
 	if (!root) return new Node(x);
 	if (root->val < x) root->r = insert(root->r, x);
 	else if (root->val > x) root->l = insert(root->l, x);
@@ -26,7 +26,7 @@ Node* insert(Node* root,int x) {
 Node* find_prev(Node* root, int x) {
 	Node* prev = nullptr;
 	Node* cur = root;
-	while (cur&&cur->val!=x) {
+	while (cur && cur->val != x) {
 		prev = cur;
 		if (x > cur->val) cur = cur->r;
 		else cur = cur->l;
@@ -35,7 +35,7 @@ Node* find_prev(Node* root, int x) {
 	return prev;
 }
 
-Node* remove(Node* root,int x) {
+Node* remove(Node* root, int x) {
 	Node* parent = nullptr;
 	Node* target = root;
 	while (target && target->val != x) {
@@ -45,7 +45,7 @@ Node* remove(Node* root,int x) {
 	}
 	if (!target) return root;
 	if (target->l && target->r) {
-		Node* prev = target,* cur = target->l;
+		Node* prev = target, * cur = target->l;
 		while (cur->r) {
 			prev = cur;
 			cur = cur->r;
@@ -87,7 +87,7 @@ Node* rr(Node* target) {//左旋
 	target->r = p->l;
 	p->l = target;
 	target->height = max(get_height(target->l), get_height(target->r)) + 1;
-	p->height= max(get_height(p->l), get_height(p->r)) + 1;
+	p->height = max(get_height(p->l), get_height(p->r)) + 1;
 	return p;
 }
 
@@ -101,7 +101,7 @@ Node* ll(Node* target) {//右旋
 }
 
 Node* lr(Node* target) {//左子树右偏，先左旋后右旋
-	target->l=rr(target->l);
+	target->l = rr(target->l);
 	return ll(target);
 }
 

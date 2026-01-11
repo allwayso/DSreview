@@ -10,7 +10,7 @@ void shellSort() {
 		for (int i = gap; i < n; i++) {
 			int temp = a[i];
 			int j;
-			for (j = i; j >= gap&&a[j-gap]>temp; j -= gap) {
+			for (j = i; j >= gap && a[j - gap] > temp; j -= gap) {
 				a[j] = a[j - gap];
 			}
 			a[j] = temp;
@@ -25,6 +25,6 @@ int main() {
 	}
 	shellSort();
 	for (int i = 0; i < n; i++) {
-		cout << a[i]<<" ";
+		cout << a[i] << " ";
 	}
 }

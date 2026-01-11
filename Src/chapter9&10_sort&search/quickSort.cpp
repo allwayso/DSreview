@@ -8,7 +8,7 @@ int n;
 
 void quickSort(int l, int r) {
 	if (l >= r) return;
-	int i = l - 1, j = r + 1, x = a[l +r >> 1];
+	int i = l - 1, j = r + 1, x = a[l + r >> 1];
 	while (i < j) {
 		do i++; while (a[i] < x);
 		do j--; while (a[j] > x);
@@ -24,6 +24,6 @@ int main() {
 	}
 	quickSort(0, n - 1);
 	for (int i = 0; i < n; i++) {
-		cout<< a[i]<<" ";
+		cout << a[i] << " ";
 	}
 }

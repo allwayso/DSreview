@@ -127,8 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AVLtree.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="BS.cpp" />
     <ClCompile Include="BSTtest.cpp" />
+    <ClCompile Include="Heapsort.cpp" />
+    <ClCompile Include="PQ.cpp" />
+    <ClCompile Include="quickSort.cpp" />
+    <ClCompile Include="SS.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BST.h" />
